@@ -51,6 +51,10 @@ def get_pdf():
     while 'もどる' in text_list:
         text_list.remove('もどる')
 
+    # 注意点という文字を全削除
+    while '※注意点' in text_list:
+        text_list.remove('※注意点')
+
     # URLからhrefを除いてURLだけ抽出
     link_list5 = []
     for link in link_list4:
@@ -101,3 +105,4 @@ def get_pdf():
         res.append([text, pdf])
 
     return res
+    # out: [['Academic Writing IA1', 'http://sy.kyoai.ac.jp/2020/112700.pdf'],[~~~]]

@@ -12,12 +12,25 @@ def get_data():
     for file in files:
         with open(file, 'r', encoding="utf-8") as f:
             line = f.readlines()
-            teacher = line[6].replace('\n', '')
-            subject = line[10].replace('\n', '')
-            semester = line[12].replace('\n', '')
-            credit = line[16].replace('\n', '')
-            data = [teacher, subject, semester[-2:], credit]
-            data_list.append(data)
-            
+        
+        for i, text in enumerate(line):
+            text = text.replace('\n', '')
+            if text == '教員名':
+                teacher = i
+            elif text == '科目名':
+                subject = i
+            elif text[:4] == '開講年度':
+                semester = i
+            elif text == '単位数':
+                credit = i
+        
+        data = {
+            '教員名': line[subject+2].replace('\n', ''),
+            '科目名': line[teacher+2].replace('\n', ''), 
+            '期間': line[semester][-3:].replace('\n', ''), 
+            '単位数': line[credit+2].replace('\n', '')
+        }
+        data_list.append(data)
+        
     return data_list
-    # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]の多次元リスト
+    # # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]の多次元リスト

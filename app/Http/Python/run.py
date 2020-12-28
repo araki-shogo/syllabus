@@ -29,6 +29,7 @@ def run():
         this_path = os.getcwd() + '\\app\\Http\\Python\\'
         datalistpath = this_path + '\\datalist.json'
         timedatapath = this_path + '\\time_data.json'
+        
         with codecs.open(datalistpath, 'w', 'utf-8') as f:
             json.dump(datalist3, f, ensure_ascii=False, indent=4)
 
