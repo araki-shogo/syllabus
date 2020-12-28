@@ -34,4 +34,3 @@ def get_data():
         
     return data_list
     # # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]の多次元リスト
-print(get_data())
