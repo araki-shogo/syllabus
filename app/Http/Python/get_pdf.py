@@ -47,7 +47,7 @@ def get_pdf():
             link_list4.append(j)
             text_list.append(j.text)
     
-    # もどると文字を全削除
+    # もどるという文字を全削除
     while 'もどる' in text_list:
         text_list.remove('もどる')
 
@@ -57,8 +57,8 @@ def get_pdf():
         href = link.get("href")
         link_list5.append(href)
 
-    # pdfのリスト作成 & .pdfで終わらないものは除外
-    pdf_list = [temp for temp in link_list5 if temp.endswith('pdf')]
+    # pdfのリスト作成 & .pdfで終わらないもの& -zが入っているものは除外
+    pdf_list = [temp for temp in link_list5 if temp.endswith('pdf') and temp[-6:-4]!='-z']
 
     # 1-3月の間は年を-1
     year = datetime.date.today().year
@@ -84,7 +84,6 @@ def get_pdf():
     else:
         os.mkdir(this_path)
     
-
     # 絶対パス作成 & 保存先リスト作成
     # カレントディレクトリ取得　& pdfディレクトリ結合
     savepath_list = []
@@ -92,9 +91,9 @@ def get_pdf():
         savepath_list.append(os.path.join(this_path, file_name))
 
     # zipでpdfリンクと保存先を指定してpdfファイルダウンロード
-    for (pdflink, savepath) in zip(link_list6, savepath_list):
-        urllib.request.urlretrieve(pdflink, savepath)
-        time.sleep(2) # 負荷対策 
+    # for (pdflink, savepath) in zip(link_list6, savepath_list):
+    #     urllib.request.urlretrieve(pdflink, savepath)
+    #     time.sleep(2) # 負荷対策 
 
     # listにする
     res = []

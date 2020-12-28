@@ -1,11 +1,13 @@
 import os
 import glob
+import sys
 
 def get_data():
     # テキストファイル取得
-    this_path = os.getcwd() + '\\text'
-    files = glob.glob('text/*.txt')
+    this_path = os.getcwd() + '\\app\\Http\\Python\\text'
+    files = glob.glob(this_path + '\\*.txt')
     data_list = []
+    print(this_path)
 
     # データ取得
     for file in files:
@@ -21,4 +23,4 @@ def get_data():
     return data_list
     # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]の多次元リスト
 
-print(get_data())
+get_data()
