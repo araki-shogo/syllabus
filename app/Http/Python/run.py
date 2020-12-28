@@ -16,7 +16,6 @@ def run():
         datalist2 = get_data.get_data() # 科目データ取得
         datalist4 = get_time_data.get_time_data() # タイムテーブル取得
         
-        dic = {}
         datalist3 = []
         for i, j in zip(datalist1, datalist2):
             i.extend(j)

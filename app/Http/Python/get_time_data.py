@@ -57,5 +57,3 @@ def get_time_data():
     }
     
     return dic
-
-print(get_time_data())

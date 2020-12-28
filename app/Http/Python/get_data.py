@@ -24,13 +24,14 @@ def get_data():
             elif text == '単位数':
                 credit = i
         
-        data = {
-            '教員名': line[subject+2].replace('\n', ''),
-            '科目名': line[teacher+2].replace('\n', ''), 
-            '期間': line[semester][-3:].replace('\n', ''), 
-            '単位数': line[credit+2].replace('\n', '')
-        }
+        data = [
+            line[subject+2].replace('\n', ''),
+            line[teacher+2].replace('\n', ''), 
+            line[semester][-3:].replace('\n', ''), 
+            line[credit+2].replace('\n', '')
+        ]
         data_list.append(data)
         
     return data_list
     # # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]の多次元リスト
+print(get_data())

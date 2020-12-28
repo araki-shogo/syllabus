@@ -95,9 +95,9 @@ def get_pdf():
         savepath_list.append(os.path.join(this_path, file_name))
 
     # zipでpdfリンクと保存先を指定してpdfファイルダウンロード
-    # for (pdflink, savepath) in zip(link_list6, savepath_list):
-    #     urllib.request.urlretrieve(pdflink, savepath)
-    #     time.sleep(2) # 負荷対策 
+    for (pdflink, savepath) in zip(link_list6, savepath_list):
+        urllib.request.urlretrieve(pdflink, savepath)
+        time.sleep(2) # 負荷対策 
 
     # listにする
     res = []
