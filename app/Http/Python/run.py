@@ -20,7 +20,7 @@ def run():
         for i, j in zip(datalist1, datalist2):
             i.extend(j)
             datalist3.append(i)
-            # out: [['科目名', 'URL', '教員名", '科目名', '期間', '単位数'],~~]
+            # out: [['科目名', 'URL', '教員名", '期間', '単位数'],~~]
         
         # json書き出し
         this_path = os.getcwd() + '\\app\\Http\\Python\\'

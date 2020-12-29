@@ -1,0 +1,157 @@
+2020/04/10(金)13:42
+
+科目ナンバー
+
+SEM-4-005-ky
+
+科目名
+
+卒業研究 （小柏）
+
+教員名
+
+小柏�伸夫
+
+開講年度学期 2020年度 前期〜後期 単位数
+
+4
+
+概要
+
+情報環境をより利便性の高いものにするためには、情報環境を利用するだけでなく情報環境の価値を高
+める方法を知る必要があります。この課題演習では、情報環境を利用するだけでなく情報環境の価値を
+高めるためのアプリケーションやコンテンツの実現方法、インターネットやモバイルデバイスの持つ利
+点について学習、研究します。併せてセキュリティやモラル等、情報環境の利用に付随する様な問題につ
+いても学習、研究します。�
+
+到達目標
+
+情報インフラを一般的な利用者の立場として利用するだけでなく、付加価値を提供できる知識、能力、技
+術を身につけることを目標とします。�
+
+「共愛12の力」との対応
+
+識見
+
+自律する力
+
+コミュニケーション力
+
+問題に対応する力
+
+共生のための知識  
+
+自己を理解する力  
+
+共生のための態度 ○�
+
+自己を抑制する力  
+
+伝え合う力
+
+協働する力
+
+○�
+
+ 
+
+分析し、思考する力 ○�
+
+構想し、実行する力 ○�
+
+グローカル・マイ
+ンド
+
+ 
+
+主体性
+
+○�
+
+関係を構築する力  
+
+実践的スキル
+
+○�
+
+教授法及び課題の
+フィードバック方
+法
+
+内容に合わせて個別に指導します。各種調査、ウェブサイトの作成、プログラムの動作の確認、コンテ
+ンツの作成、プログラミングなどを行いながら卒業研究を進めます。また、プレゼンテーションを通し
+て知識を共有しながら進めます。資料について事前予習及び復習を行うこととします。�
+
+アクティブラーニング
+
+ 
+
+サービスラーニング
+
+ 
+
+課題解決型学修
+
+○�
+
+受講条件������前提
+科目
+
+アセスメントポリ
+シー及び評価方法
+
+課題演習を履修済みであることを条件とします。�
+
+平常点 (課題) 20%、取り組みの積極性 20%、卒業論文の評価 60%
+卒業論文はA4レポート用紙20枚以上、または、相当と認められるウェブサイトや作成物とする。また
+コースの指定する卒業論文提出日に卒業論文が提出されない場合、卒業研究の単位は出ないものとす
+る。
+　
+
+教材
+
+個別に指示します。�
+
+参考図書
+
+個別に指示します。�
+
+内容・スケジュー
+ル
+
+内容に合わせて個別に指導します。�
+
+Number
+
+SEM-4-005-ky
+
+Subject
+
+Graduation Thesis
+
+Name
+
+小柏�伸夫（Ogashiwa Nobuo）
+
+Year and ��S
+emester
+
+Full-year for 202
+0�
+
+Credits
+
+4
+
+Course����������O
+utline
+
+In order to make our information environment even more convenient, rather than just using the i
+nformation environment, we need to know methods to increase the value of the information env
+ironment. In this "Graduation Thesis" course, rather than just using the information environment
+, students will learn about and research methods to realize applications and contents that increa
+se the value of the information environment, and about the advantages the Internet and mobile 
+devices have. In addition, students will also learn about and research various problems associate
+d with using the information environment, such as security and morals. �
+
+

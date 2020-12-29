@@ -17,15 +17,12 @@ def get_data():
             text = text.replace('\n', '')
             if text == '教員名':
                 teacher = i
-            elif text == '科目名':
-                subject = i
             elif text[:4] == '開講年度':
                 semester = i
             elif text == '単位数':
                 credit = i
         
         data = [
-            line[subject+2].replace('\n', ''),
             line[teacher+2].replace('\n', ''), 
             line[semester][-3:].replace('\n', ''), 
             line[credit+2].replace('\n', '')

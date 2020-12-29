@@ -1,0 +1,156 @@
+2020/04/09(木)17:10
+
+科目ナンバー
+
+SEM-3-004-ky
+
+科目名
+
+課題演習II （小柏）
+
+教員名
+
+小柏�伸夫
+
+開講年度学期 2020年度 後期
+
+単位数
+
+2
+
+概要
+
+インターネットに関るサービスやデバイスを通して、インターネットの仕組みや新しいサービスなどの
+理解を深めます。情報環境をより利便性の高いものにするためには、情報環境を利用するだけでなく情
+報環境の価値を高める方法を知る必要があります。この課題演習では、情報環境を利用するだけでなく
+情報環境の価値を高めるためのアプリケーションやコンテンツの実現方法について学習します。併せて
+セキュリティやモラル等、情報環境の利用に付随する様な問題についても学習します。�
+
+到達目標
+
+情報環境の動作の仕組みの理解、プログラミングによる新しいアプリケーションの実現、利用価値の高
+いコンテンツの実現などが可能な知識や能力を身につけることを目標とします。�
+
+「共愛12の力」との対応
+
+識見
+
+自律する力
+
+コミュニケーション力
+
+問題に対応する力
+
+共生のための知識  
+
+自己を理解する力  
+
+共生のための態度 ○�
+
+自己を抑制する力  
+
+伝え合う力
+
+協働する力
+
+ 
+
+○�
+
+分析し、思考する力 ○�
+
+構想し、実行する力 ○�
+
+グローカル・マイ
+ンド
+
+ 
+
+主体性
+
+○�
+
+関係を構築する力  
+
+実践的スキル
+
+○�
+
+教授法及び課題の
+フィードバック方
+法
+
+内容に合わせて個別に指導します。演習に多くの時間を充て、実際のコンテンツの作成、プログラミン
+グなどを行いながら学習を進めます。また、プレゼンテーションを通して知識を共有しながら習得しま
+す。資料について事前予習及び復習を行うこととします。�
+
+アクティブラーニング
+
+ 
+
+サービスラーニング
+
+ 
+
+課題解決型学修
+
+○�
+
+インターネットや情報技術に興味のある学生を対象とします。�
+
+平常点 (課題) 50%、取り組みの積極性 50%�
+
+受講条件������前提
+科目
+
+アセスメントポリ
+シー及び評価方法
+
+内容・スケジュー
+ル
+
+教材
+
+個別に指示します。�
+
+参考図書
+
+授業の中で紹介します。�
+
+個別にHTML、CSS、JavaScriptなどを用いたサイトやシステムの構築を通して学習を進めます。�
+
+Number
+
+SEM-3-004-ky
+
+Subject
+
+Junior Specialty Seminar II
+
+Name
+
+小柏�伸夫（Ogashiwa Nobuo）
+
+Year and ��S
+emester
+
+Second semester
+for 2020�
+
+Credits
+
+2
+
+Course����������O
+utline
+
+Through services and devices related to the Internet, students will deepen our understanding of 
+the structure of the Internet and new services. In order to make our information environment ev
+en more convenient, rather than just using the information environment, we need to know meth
+ods to increase the value of the information environment. In this "Junior Specialty Seminar I", rat
+her than just using the information environment, students will learn about methods to realize ap
+plications and contents that increase the value of the information environment. In addition, stud
+ents will also learn about various problems associated with using the information environment, s
+uch as security and morals. �
+
+
