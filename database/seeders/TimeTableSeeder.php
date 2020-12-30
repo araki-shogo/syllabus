@@ -32,7 +32,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Mon_2'] as $record) {
@@ -45,7 +45,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Mon_3'] as $record) {
@@ -58,7 +58,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Mon_4'] as $record) {
@@ -71,7 +71,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Mon_5'] as $record) {
@@ -84,7 +84,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Mon_6'] as $record) {
@@ -97,7 +97,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Tue_1'] as $record) {
@@ -110,7 +110,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Tue_2'] as $record) {
@@ -123,7 +123,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Tue_3'] as $record) {
@@ -136,7 +136,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Tue_4'] as $record) {
@@ -149,7 +149,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Tue_5'] as $record) {
@@ -162,7 +162,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Tue_6'] as $record) {
@@ -175,7 +175,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Wed_1'] as $record) {
@@ -188,7 +188,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Wed_2'] as $record) {
@@ -201,7 +201,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Wed_3'] as $record) {
@@ -214,7 +214,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Wed_4'] as $record) {
@@ -227,7 +227,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Wed_5'] as $record) {
@@ -240,7 +240,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Wed_6'] as $record) {
@@ -253,7 +253,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Thu_1'] as $record) {
@@ -266,7 +266,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Thu_2'] as $record) {
@@ -279,7 +279,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Thu_3'] as $record) {
@@ -292,7 +292,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Thu_4'] as $record) {
@@ -305,7 +305,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Thu_5'] as $record) {
@@ -318,7 +318,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Thu_6'] as $record) {
@@ -331,7 +331,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Fri_1'] as $record) {
@@ -344,7 +344,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Fri_2'] as $record) {
@@ -357,7 +357,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Fri_3'] as $record) {
@@ -370,7 +370,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Fri_4'] as $record) {
@@ -383,7 +383,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Fri_5'] as $record) {
@@ -396,7 +396,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
         try {
             foreach ($records['Fri_6'] as $record) {
@@ -409,7 +409,7 @@ class TimeTableSeeder extends Seeder
                 DB::table('time')->insert($param);
             }
             } catch (Exception $e) {
-                return;
+                echo 'data is nothing';
         }
     }
 }
