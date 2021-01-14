@@ -10,6 +10,7 @@
 
 <body>
     <div id="app">
+    <p style="text-align:center;margin:0;">version 1.0.0</p>
         <ul class="tab clearfix">
             <li class="active">フリーワード検索</li>
             <li>タグ検索</li>
