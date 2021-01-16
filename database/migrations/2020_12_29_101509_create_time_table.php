@@ -16,6 +16,8 @@ class CreateTimeTable extends Migration
         Schema::create('time', function (Blueprint $table) {
             $table->increments('id');
             $table->string('time')->nullable();
+            $table->string('grade')->nullable();
+            $table->string('semester')->nullable();
             $table->string('subject')->nullable();
             $table->string('teacher')->nullable();
             $table->string('class')->nullable();
