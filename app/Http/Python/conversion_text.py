@@ -10,6 +10,7 @@ from pdfminer.pdfinterp import PDFPageInterpreter, PDFResourceManager
 from pdfminer.pdfpage import PDFPage
 
 def convert_text():
+    print("converting")
     # textディレクトリ作成、既に存在すれば全削除＆再作成
     this_path = os.getcwd() + '\\app\\Http\\Python\\text'
     exists = os.path.exists(this_path)

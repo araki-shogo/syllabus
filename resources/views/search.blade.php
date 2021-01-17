@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <title>小柏ゼミ | 授業検索</title>
+    <title>授業検索</title>
 </head>
 
 <body>
     <div id="app">
-    <p style="text-align:center;margin:0;">version 1.0.0</p>
+    <p style="text-align:center;margin:0;">Version 1.0.0</p>
+    <p style="text-align:center;margin:0;">Created by Ogashiwa Seminar</p>
         <ul class="tab clearfix">
             <li class="active">フリーワード検索</li>
             <li>タグ検索</li>
@@ -24,7 +25,7 @@
                 <div>
                     <div v-for="data in filterData">
                         <a :href="data.url" target="_blank">
-                            <p class="data_para">@{{data.time}} @{{data.subject}} @{{data.teacher}} @{{data.class}} @{{data.semester}}</p>
+                            <p class="data_para">@{{data.time}} @{{data.subject}} @{{data.class}} @{{data.semester}} @{{data.grade}}</p>
                         </a>
                     </div>
                 </div>
