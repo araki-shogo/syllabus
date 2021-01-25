@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+# 最初にアクセスされるページ
 Route::get('/', function () {
     return view('search');
 });

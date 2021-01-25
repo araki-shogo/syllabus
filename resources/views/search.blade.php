@@ -63,11 +63,11 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         $(function() {
-            $('.tab li').click(function() {
-                var index = $('.tab li').index(this);
-                $('.tab li').removeClass('active');
+            $('.tab li').click(function() { // .tab liがクリックされたとき
+                var index = $('.tab li').index(this); // indexを調べる
+                $('.tab li').removeClass('active'); // .activeを除外と追加
                 $(this).addClass('active');
-                $('.area ul').removeClass('show').eq(index).addClass('show');
+                $('.area ul').removeClass('show').eq(index).addClass('show'); // 選択されたindexに.showを追加
             });
         });
 
@@ -85,6 +85,7 @@
                 ]
             },
             watch: {
+                // 配列を常に監視しておく
                 val(value) {
                     this.val = value
                 }
@@ -98,7 +99,7 @@
                     let datas = []
                     for (let i in this.datalist) {
                         let data = this.datalist[i];
-                        if (data.time.indexOf(this.keyword) !== -1 ||
+                        if (data.time.indexOf(this.keyword) !== -1 || // 以下すべてデータが正しい場合
                             data.subject.indexOf(this.keyword) !== -1 ||
                             data.teacher.indexOf(this.keyword) !== -1 ||
                             data.semester.indexOf(this.keyword) !== -1 ||

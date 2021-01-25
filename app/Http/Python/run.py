@@ -9,6 +9,7 @@ import os
 import json
 import codecs
 
+# jsonを吐き出すメイン関数
 def run():
     if __name__ == '__main__':
         datalist1 = get_pdf.get_pdf() # 絶対パス・科目名のリスト取得＆PDFダウンロード

@@ -5,15 +5,16 @@ import openpyxl
 
 def timetable(dayOfTheWeek, num):
     this_path = os.getcwd() + '\\app\\Http\\Python\\'
-    wb = openpyxl.load_workbook(this_path + 'excel\\' + dayOfTheWeek + '.xlsx')
+    wb = openpyxl.load_workbook(this_path + 'excel\\' + dayOfTheWeek + '.xlsx') # excel開く
     ws = wb["Sheet1"]
     arr = []
-    for x, y, z, a, b in zip(list(ws.columns)[num], list(ws.columns)[num+1], list(ws.columns)[num+2], list(ws.columns)[num+3], list(ws.columns)[num+4]):
+    for x, y, z, a, b in zip(list(ws.columns)[num], list(ws.columns)[num+1], list(ws.columns)[num+2], list(ws.columns)[num+3], list(ws.columns)[num+4]): # データの場所を指定
         l = list((x.value, y.value, z.value, a.value, b.value))
         arr.append(l)
     newarr = [i for i in arr if i!=[None, None, None, None, None]]
     return newarr
 
+# 判別用関数　データがちゃんとはいっていないとはじかれる
 def execute(dayOfTheWeek, num):
     try: return timetable(dayOfTheWeek, num)
     except IndexError as e: return None

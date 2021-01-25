@@ -22,6 +22,7 @@ def get_data():
             elif text == '単位数':
                 credit = i
         
+        # データはそれぞれ後ろから何番目とかの規則性がある
         data = [
             line[teacher+2].replace('\n', ''), 
             line[semester][-3:].replace('\n', ''), 
