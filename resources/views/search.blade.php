@@ -85,7 +85,6 @@
                 ]
             },
             watch: {
-                // 配列を常に監視しておく
                 val(value) {
                     this.val = value
                 }
