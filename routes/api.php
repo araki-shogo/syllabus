@@ -19,7 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-# /timeにアクセスしてjson取得
 Route::get('/time', function () {
     $res =  DB::select('select * from time inner join subjects on time.subject=subjects.subject');
     return response()->json($res, 200);
