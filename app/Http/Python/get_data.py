@@ -22,7 +22,6 @@ def get_data():
             elif text == '単位数':
                 credit = i
         
-        # データはそれぞれ後ろから何番目とかの規則性がある
         data = [
             line[teacher+2].replace('\n', ''), 
             line[semester][-3:].replace('\n', ''), 
@@ -31,4 +30,4 @@ def get_data():
         data_list.append(data)
         
     return data_list
-    # # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]の多次元リスト
+    # out: [['先生の名前', '科目名', '前期OR後期', '単位数'], ~~]
