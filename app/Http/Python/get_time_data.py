@@ -8,7 +8,7 @@ def timetable(dayOfTheWeek, num):
     wb = openpyxl.load_workbook(this_path + 'excel\\' + dayOfTheWeek + '.xlsx') # excel開く
     ws = wb["Sheet1"]
     arr = []
-    for x, y, z, a, b in zip(list(ws.columns)[num], list(ws.columns)[num+1], list(ws.columns)[num+2], list(ws.columns)[num+3], list(ws.columns)[num+4]): # データの場所を指定
+    for x, y, z, a, b in zip(list(ws.columns)[num], list(ws.columns)[num+1], list(ws.columns)[num+2], list(ws.columns)[num+3], list(ws.columns)[num+4]):
         l = list((x.value, y.value, z.value, a.value, b.value))
         arr.append(l)
     newarr = [i for i in arr if i!=[None, None, None, None, None]]
