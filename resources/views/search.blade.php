@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <title>授業検索</title>
+
 </head>
 
-<body>
+<body style="width: 80%; margin: 0 auto;">
     <div id="app">
-    <p style="text-align:center;margin:0;">Version 1.0.0</p>
-    <p style="text-align:center;margin:0;">Created by Ogashiwa Seminar</p>
         <ul class="tab clearfix">
             <li class="active">フリーワード検索</li>
             <li>タグ検索</li>
-            <li>裏側</li>
         </ul>
         <div class="area">
             <ul class="show">
                 <label class="ef">
                     <input type="text" v-model="keyword" placeholder="Search by official name (ex: Spoken English ...)" type="text" class="freeword">
                 </label>
-                <div>
-                    <div v-for="data in filterData">
-                        <a :href="data.url" target="_blank">
-                            <p class="data_para">@{{data.time}} @{{data.subject}} @{{data.class}} @{{data.semester}} @{{data.grade}}</p>
-                        </a>
-                    </div>
+        
+                <div v-for="data in filterData">
+                    <a :href="data.url" target="_blank">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>@{{data.time}}</td>
+                                    <td>@{{data.subject}}</td>
+                                    <td>@{{data.class}}</td>
+                                    <td>@{{data.semester}}</td>
+                                    <td>@{{data.grade}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </a>
                 </div>
+                
                 <a href="#app">
                     <p class="to_top">ページ上部へ<p>
                 </a>
@@ -44,12 +52,6 @@
                         <p class="data_para">@{{data.time}} @{{data.subject}} @{{data.teacher}} @{{data.class}} @{{data.semester}}</p>
                     </a>
                 </div>
-                <a href="#app">
-                    <p class="to_top">ページ上部へ<p>
-                </a>
-            </ul>
-            <ul>
-                <p>comming soon</p>
                 <a href="#app">
                     <p class="to_top">ページ上部へ<p>
                 </a>
