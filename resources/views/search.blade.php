@@ -18,39 +18,43 @@
         <div class="area">
             <ul class="show">
                 <label class="ef">
-                    <input type="text" v-model="keyword" placeholder="Search by official name (ex: Spoken English ...)" type="text" class="freeword">
+                    <input type="text" v-model="keyword" placeholder="Search by official name (ex: Spoken English ...)" type="text" class="ef_freeword">
                 </label>
-        
-                <div v-for="data in filterData">
-                    <a :href="data.url" target="_blank">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>@{{data.time}}</td>
-                                    <td>@{{data.subject}}</td>
-                                    <td>@{{data.class}}</td>
-                                    <td>@{{data.semester}}</td>
-                                    <td>@{{data.grade}}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </a>
+
+                <div class="list">
+                    <div v-for="data in filterData" class="list_item">
+                        <a :href="data.url" target="_blank" class="list_item_link">
+                            <span>@{{data.time}}</span>
+                            <span>@{{data.subject}}</span>
+                            <span>@{{data.class}}</span>
+                            <span>@{{data.semester}}</span>
+                            <span>@{{data.grade}}</span>
+                        </a>
+                    </div>
                 </div>
-                
                 <a href="#app">
                     <p class="to_top">ページ上部へ<p>
                 </a>
             </ul>
+
             <ul>
                 <div class="flex">
                     <div v-for="data in time">
                         <input type="checkbox" v-bind:value="data" v-model="val">@{{data}}
                     </div>
                 </div>
-                <div v-for="data in filterData2">
-                    <a :href="data.url" target="_blank">
-                        <p class="data_para">@{{data.time}} @{{data.subject}} @{{data.teacher}} @{{data.class}} @{{data.semester}}</p>
-                    </a>
+                
+                <div class="list">
+                    <div v-for="data in filterData2" class="list_item">
+                        <a :href="data.url" target="_blank" class="list_item_link">
+                            <span>@{{data.time}}</span>
+                            <span>@{{data.subject}}</span>
+                            <span class="list_item_link_teacher">@{{data.teacher}}</span>
+                            <span>@{{data.class}}</span>
+                            <span>@{{data.semester}}</span>
+                            <span>@{{data.grade}}</span>
+                        </a>
+                    </div>
                 </div>
                 <a href="#app">
                     <p class="to_top">ページ上部へ<p>
