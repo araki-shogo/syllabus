@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <div class="ef">
       <input
         type="text"
@@ -22,11 +22,11 @@
           <div></div>
         </div>
       </div>
-      <p>Loading...</p>
+      <p class="axios_text">Loading...</p>
     </div>
 
-    <div class="list">
-      <div v-for="data in filterData" class="list_item">
+    <div class="list" id="list">
+      <div v-for="data in filterData" class="list_item" id="list_item">
         <a :href="data.url" target="_blank" class="list_item_link">
           <span>{{ data.time }}</span>
           <span>{{ data.subject }}</span>
@@ -53,6 +53,13 @@ export default Vue.extend({
     };
   },
   mounted() {
+    const header = document.getElementById('header');    
+    const wrapper = document.getElementById('wrapper');    
+    if(window.matchMedia && window.matchMedia('(max-device-width: 600px)').matches) {
+      header.style.width = '95%';
+      wrapper.style.width = '95%';
+    }
+
     axios
       .get("/api/time/")
       .then((response) => {

@@ -2,9 +2,14 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  text-align: center;
 
   &_link {
     font-size: 30px;
@@ -18,6 +23,14 @@ body {
 .flex {
   display: flex;
   flex-wrap: wrap;
+
+  &_label {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+
+    &_input {}
+  }
 }
 
 .ef {
@@ -32,13 +45,20 @@ body {
   display: flex;
   flex-direction: column;
 
-  &_item {
-    margin: 7px 0;
+  & :not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
 
+  &_item {
     &_link {
       display: flex;
       justify-content: space-between;
+      margin: 10px 0;
       align-items: center;
+
+      span {
+        border-bottom: none !important;
+      }
 
       & span:nth-child(2) {
         width: 35%;
@@ -60,5 +80,10 @@ body {
   &_wrap {
     position: absolute;
     top: 100px;
+  }
+
+  &_text {
+    font-size: 30px;
+    color: $blue;
   }
 }

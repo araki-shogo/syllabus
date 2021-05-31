@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <div class="ef">
       <input
         type="text"
@@ -22,13 +22,14 @@
           <div></div>
         </div>
       </div>
-      <p>Loading...</p>
+      <p class="axios_text">Loading...</p>
     </div>
 
     <div class="flex">
-      <div v-for="data in time">
-        <input type="checkbox" v-bind:value="data" v-model="val">{{data}}
-      </div>
+        <label class="flex_label" v-for="data in time"> 
+          <input  class="flex_label_input" type="checkbox" v-bind:value="data" v-model="val">
+          {{data}}
+        </label>
     </div>
 
     <div class="list">
@@ -66,11 +67,16 @@ export default Vue.extend({
     };
   },
   watch(value) {
-    //   val(value) {
           this.val = value;
-    //   }
   },
   mounted() {
+    const header = document.getElementById('header');    
+    const wrapper = document.getElementById('wrapper');    
+    if(window.matchMedia && window.matchMedia('(max-device-width: 600px)').matches) {
+      header.style.width = '95%';
+      wrapper.style.width = '95%';
+    }
+
     axios
       .get("/api/time/")
       .then((response) => {
