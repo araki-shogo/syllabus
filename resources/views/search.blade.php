@@ -21,6 +21,22 @@
                     <input type="text" v-model="keyword" placeholder="Search by official name (ex: Spoken English ...)" type="text" class="ef_freeword">
                 </label>
 
+                <div v-if="loading == true" class="axios">
+                    <div class="axios_wrap">
+                        <div class="ball-spin-fade-loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <p>Loading...</p>
+                </div>
+
                 <div class="list">
                     <div v-for="data in filterData" class="list_item">
                         <a :href="data.url" target="_blank" class="list_item_link">
@@ -43,7 +59,7 @@
                         <input type="checkbox" v-bind:value="data" v-model="val">@{{data}}
                     </div>
                 </div>
-                
+
                 <div class="list">
                     <div v-for="data in filterData2" class="list_item">
                         <a :href="data.url" target="_blank" class="list_item_link">
@@ -80,6 +96,7 @@
         var app = new Vue({
             el: '#app',
             data: {
+                loading: true,
                 datalist: [],
                 val: [],
                 keyword: '',
@@ -97,6 +114,7 @@
             },
             mounted: function() {
                 axios.get('/api/time').then(response => this.datalist = response.data)
+                this.loading = false;
             },
             computed: {
                 // フリーワード検索
