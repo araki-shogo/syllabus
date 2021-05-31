@@ -2,41 +2,19 @@ body {
   margin: 0;
 }
 
-li {
-  list-style: none;
-}
 
-.tab {
-  border-bottom: 3px solid #fb4343;
-  display: flex;
-  padding: 0;
-  flex-wrap: wrap;
-}
-.tab li {
-  color: #333;
-  margin: 0 10px -1px 0;
-  padding: 10px 20px;
-  cursor: pointer;
-  list-style: none;
-  transition: 0.3s;
-}
-.tab li.active {
-  color: #fff;
-  background: #fb4343;
-  cursor: auto;
-}
 
-.area ul {
-  display: none;
-}
-.area ul.show {
-  display: block;
-  padding: 0px;
-}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
 
-.show {
-  padding: 0;
-  text-align: center;
+  &_link {
+    font-size: 30px;
+    
+    &_item {
+      font-size: 30px;
+    }
+  }
 }
 
 .flex {
