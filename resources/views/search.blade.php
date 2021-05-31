@@ -114,7 +114,10 @@
             },
             mounted: function() {
                 axios.get('/api/time').then(response => this.datalist = response.data)
-                this.loading = false;
+                setTimeout(() => {
+                    this.loading = false;
+                }, 500);
+                
             },
             computed: {
                 // フリーワード検索
