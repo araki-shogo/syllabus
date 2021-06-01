@@ -1,4 +1,5 @@
-今までシラバスの概要のPDFと時間割のPDFが分かれていたのでそれを結合して、My時間割を決めやすくなるように授業を検索できるようにした
+Until now, the PDF of the outline of the syllabus and the PDF of the timetable were separated, so I combined them.
+Made it possible to search for lessons to make it easier to decide the timetable
 
 https://d.kuku.lu/192a04b0d
 
